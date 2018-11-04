@@ -11,4 +11,9 @@ miles = 10/1.61;
 print('Given Miles =', miles);
 MilesPerMinute = miles/totalTimeMinutes;
 print('Miles per minute =', MilesPerMinute);
+<<<<<<< HEAD
 print('Miles per hour =', MilesPerMinute*60);
+=======
+print('Miles per hour =', MilesPerMinute*60, '\n');
+print('Think Python - First chapter programming - Completed!');
+>>>>>>> c8eda28b605ca6b674fa574ee39c0c58d2edc7f6
