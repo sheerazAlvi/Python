@@ -11,4 +11,4 @@ miles = 10/1.61;
 print('Given Miles =', miles);
 MilesPerMinute = miles/totalTimeMinutes;
 print('Miles per minute =', MilesPerMinute);
-print('Miles per hour =', MilesPerMinute*60);
+print('Miles per hour =', MilesPerMinute*60):
