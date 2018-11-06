@@ -154,3 +154,5 @@ def display2x3():
 
 print('\n\nDisplaying 2x3 grid')
 display2x3();
+
+print('\n\nThink Python - Chapter 3 Programming - Completed!');
