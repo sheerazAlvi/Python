@@ -29,30 +29,128 @@ do_twice(print_string,'twice');
 print('\nPrinting string four times')
 do_four(print_string,'four times');
 
-#To print grid 2x2
-print('\nDisplaying 2x2 grid')
-def single(s): 
-    f = print(s,end = '');
-    return(f);
+#Print grid
+def repeat(string,appearance):
+    print(string*appearance,end = '');
+
+def block(string1,string2,string1Appearance,string2Appearance):
+    repeat(string1,string1Appearance);
+    repeat(string2,string2Appearance);
     
-def repeat(s):
-    f = print(s*4,end = '');
-    return(f);
+def dualBlock(string1,string2,string1Appearance,string2Appearance):
+    block(string1,string2,string1Appearance,string2Appearance);
+    block(string1,string2,string1Appearance,string2Appearance);
 
-def sides(a,b):
-    single(a);
-    repeat(b);
-    single(a);
-    repeat(b);
-    single(a);
+def display2x2():
+    dualBlock('+','-',1,4);
+    repeat('+',1);
+    print();
+    dualBlock('|',' ',1,4);
+    repeat('|',1);
+    print();
+    dualBlock('|',' ',1,4);
+    repeat('|',1);
+    print();
+    dualBlock('+','-',1,4);
+    repeat('+',1);
+    print();
+    dualBlock('|',' ',1,4);
+    repeat('|',1);
+    print();
+    dualBlock('|',' ',1,4);
+    repeat('|',1);
+    print();
+    dualBlock('+','-',1,4);
+    repeat('+',1);
+    
+print('\nDisplaying 2x2 grid')
+display2x2();
 
-def middle(a,b):
-    single(a);
-    repeat(b);
-    single(a);
-    repeat(b);
-    single(a);
 
-sides('+','-');
-print('');
-middle('|',' ');
+def display4x4():
+    dualBlock('+','-',1,4);
+    dualBlock('+','-',1,4);
+    repeat('+', 1);
+    print();
+    dualBlock('|',' ',1,4);
+    dualBlock('|',' ',1,4);
+    repeat('|', 1);
+    print();
+    dualBlock('|',' ',1,4);
+    dualBlock('|',' ',1,4);
+    repeat('|', 1);
+    print();
+    dualBlock('+','-',1,4);
+    dualBlock('+','-',1,4);
+    repeat('+', 1);
+    print();
+    dualBlock('|',' ',1,4);
+    dualBlock('|',' ',1,4);
+    repeat('|', 1);
+    print();
+    dualBlock('|',' ',1,4);
+    dualBlock('|',' ',1,4);
+    repeat('|', 1);
+    print();
+    dualBlock('+','-',1,4);
+    dualBlock('+','-',1,4);
+    repeat('+', 1);
+    print();
+    dualBlock('|',' ',1,4);
+    dualBlock('|',' ',1,4);
+    repeat('|', 1);
+    print();
+    dualBlock('|',' ',1,4);
+    dualBlock('|',' ',1,4);
+    repeat('|', 1);
+    print();
+    dualBlock('+','-',1,4);
+    dualBlock('+','-',1,4);
+    repeat('+', 1);
+    print();
+    dualBlock('|',' ',1,4);
+    dualBlock('|',' ',1,4);
+    repeat('|', 1);
+    print();
+    dualBlock('|',' ',1,4);
+    dualBlock('|',' ',1,4);
+    repeat('|', 1);
+    print();
+    dualBlock('+','-',1,4);
+    dualBlock('+','-',1,4);
+    repeat('+', 1);
+    
+print('\n\nDisplaying 4x4 grid')
+display4x4();
+
+def display2x3():
+    dualBlock('+','-',1,4);
+    block('+','-',1,4);
+    repeat('+', 1);
+    print();
+    dualBlock('|',' ',1,4);
+    block('|',' ',1,4);
+    repeat('|', 1);
+    print();
+    dualBlock('|',' ',1,4);
+    block('|',' ',1,4);
+    repeat('|', 1);
+    print();
+    dualBlock('+','-',1,4);
+    block('+','-',1,4);
+    repeat('+', 1);
+    print();
+    dualBlock('|',' ',1,4);
+    block('|',' ',1,4);
+    repeat('|', 1);
+    print();
+    dualBlock('|',' ',1,4);
+    block('|',' ',1,4);
+    repeat('|', 1);
+    print();
+    dualBlock('+','-',1,4);
+    block('+','-',1,4);
+    repeat('+', 1);
+
+print('\n\nDisplaying 2x3 grid')
+display2x3();
